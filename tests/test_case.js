@@ -74,5 +74,5 @@ const coreLib = require("../libs/core.js");
 {
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
   output = true; 
-  assert.equal(coreLib.isPlaceEmpty(board, 1,1),output);
+  assert.equal(coreLib.isPlaceEmpty(board, 1,0),output);
 }

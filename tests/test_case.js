@@ -67,12 +67,12 @@ const coreLib = require("../libs/core.js");
 //-----------------------------Test for isPlaceEmpty() function
 {
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
-  output = true; 
-  assert.deepEqual(coreLib.isPlaceEmpty(board, 3,1),output);
+  output = false; 
+  assert.equal(coreLib.isPlaceEmpty(board, 3,1),output);
 }
 
 {
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
-  output = false; 
-  assert.deepEqual(coreLib.isPlaceEmpty(board, 1,1),output);
+  output = true; 
+  assert.equal(coreLib.isPlaceEmpty(board, 1,1),output);
 }

@@ -8,7 +8,6 @@ const generateBoard = function(sideLength){
   }
   return board;
 }
-
 exports.generateBoard = generateBoard;
 
 //function to check whether current place is occupied or not

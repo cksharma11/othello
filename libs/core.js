@@ -10,3 +10,9 @@ const generateBoard = function(sideLength){
 }
 
 exports.generateBoard = generateBoard;
+
+//function to check whether current place is occupied or not
+const isPlaceEmpty = function(board,row,column){
+  return (board[row][column] == "-");
+}
+

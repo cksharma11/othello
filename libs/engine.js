@@ -1,12 +1,12 @@
 const printBoard = function(board){
   let result = "";
-  let separator = "";
+  let rowSeparator = "";
   for(let row = 0; row < board.length; row++){
-    result += separator;
+    result += rowSeparator;
     for(let col = 0; col < board[row].length; col++){
       result += board[row][col] + " ";
     }
-    separator = "\n";
+    rowSeparator = "\n";
   }
   return result;
 }

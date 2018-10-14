@@ -10,4 +10,3 @@ const generateBoard = function(side){
 return board;
 }
 exports.generateBoard = generateBoard;
-

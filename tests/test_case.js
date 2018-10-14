@@ -51,8 +51,15 @@ const coreLib = require("../libs/core.js");
 
 
 //-----------------------------Test for placeDisc() function
+
 {
   output = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","-","-","-"]];      
   assert.deepEqual(engineLib.placeDisc(board, "O", 3,1),output);
+}
+
+{
+  output = [["X","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","-","-","-"]];      
+  board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","-","-","-"]];      
+  assert.deepEqual(engineLib.placeDisc(board, "X", 0,0),output);
 }

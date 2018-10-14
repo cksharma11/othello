@@ -4,7 +4,7 @@ const generateBoard = function(side){
   for(let row=0; row<side; row++){
     board[row] = [];
     for(let column=0; column<side; column++){
-      board[row][column] = "-"
+      board[row][column] = "-";
     }
   }
 return board;

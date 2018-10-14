@@ -1,5 +1,5 @@
 const assert = require("assert");
-//const engineLib = require("../libs/engine.js");
+const engineLib = require("../libs/engine.js");
 const coreLib = require("../libs/core.js");
 
 //---------------------------Test for generateBoard() function
@@ -14,3 +14,11 @@ assert.deepEqual(coreLib.generateBoard(2), [["-", "-"], ["-", "-"]]);
 
 //Test for input 4
 assert.deepEqual(coreLib.generateBoard(4), [["-", "-", "-", "-"], ["-", "-", "-", "-"],["-", "-", "-", "-"],["-", "-", "-", "-"]]);
+
+//---------------------------Test for printBoard() function
+let board, output;
+
+//Test for empty board
+board = [];
+output = "";
+assert.deepEqual(engineLib.printBoard(board), output);

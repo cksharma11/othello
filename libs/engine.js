@@ -31,5 +31,11 @@ const initBoard = function(board){
   return board;
 }
 
+const placeDisc = function(board, element, row, column){
+  board[row][column] = element;
+  return board;
+}
+
 exports.initBoard = initBoard;
 exports.printBoard = printBoard;
+exports.placeDisc = placeDisc;

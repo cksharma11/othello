@@ -1,3 +1,6 @@
+const coreLib = require("./core.js");
+const generateBoard = coreLib.generateBoard;
+
 const printBoard = function(board){
   let result = "";
   let rowSeparator = "";
@@ -10,4 +13,29 @@ const printBoard = function(board){
   }
   return result;
 }
+
+const initBoard = function(board){
+  let boardSize = board.length;
+  //Upper Left Position 
+  board[boardSize/2 -1][boardSize/2 -1] = 'X';
+  
+  //Bottom right position
+  board[boardSize/2][boardSize/2] = 'X';
+  
+  //Upper right position
+  board[boardSize/2 -1][boardSize/2] = 'O';
+  
+  //Bottom left position
+  board[boardSize/2][boardSize/2 -1] = 'O';
+
+  return board;
+}
+
+const placeDisc = function(board, element, row, column){
+  board[row][column] = element;
+  return board;
+}
+
+exports.initBoard = initBoard;
 exports.printBoard = printBoard;
+exports.placeDisc = placeDisc;

@@ -1,6 +1,6 @@
 const printBoard = function(board){
   let result = "";
-  separator = "";
+  let separator = "";
   for(let row = 0; row < board.length; row++){
     result += separator;
     for(let col = 0; col < board[row].length; col++){

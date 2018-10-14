@@ -34,7 +34,7 @@ output = "- - \n- - ";
 assert.deepEqual(engineLib.printBoard(board), output);
 
 //Test for 4x4 board
-board = [["-","-","-","-"], ["-", "-", "-", "-"]];
+board = [["-","-","-","-"], ["-", "-", "-", "-"],["-","-","-","-"], ["-", "-", "-", "-"]];
 output = "- - - - \n- - - - \n- - - - \n- - - - ";
 assert.deepEqual(engineLib.printBoard(board), output);
 

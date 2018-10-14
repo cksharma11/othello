@@ -11,6 +11,7 @@ const printBoard = function(board){
   }
   return result;
 }
+exports printBoard = printBoard;
 =======
 
 >>>>>>> dad6996800f02f00c97c017a4a3073361ff1a82a

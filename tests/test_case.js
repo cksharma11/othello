@@ -42,9 +42,17 @@ const coreLib = require("../libs/core.js");
   assert.deepEqual(engineLib.printBoard(board), output);
 }
 
-//_____________________________test for generating initBoard() function
+//_____________________________test for initBoard() function
 {
   board = [["-","-","-","-"],["-","-","-","-"],["-","-","-","-"],["-","-","-","-"]];      
   output = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","-","-","-"]];      
   assert.deepEqual(engineLib.initBoard(board),output);
+}
+
+
+//-----------------------------Test for placeDisc() function
+{
+  output = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
+  board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","-","-","-"]];      
+  assert.deepEqual(engineLib.placeDisc(board, "O", 3,1),output);
 }

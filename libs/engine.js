@@ -10,4 +10,4 @@ const printBoard = function(board){
   }
   return result;
 }
-exports printBoard = printBoard;
+exports.printBoard = printBoard;

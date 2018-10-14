@@ -15,4 +15,3 @@ exports.generateBoard = generateBoard;
 const isPlaceEmpty = function(board,row,column){
   return (board[row][column] == "-");
 }
-

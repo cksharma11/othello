@@ -64,15 +64,15 @@ const coreLib = require("../libs/core.js");
   assert.deepEqual(engineLib.placeDisc(board, "X", 0,0),output);
 }
 
-//-----------------------------Test for placeDisc() function
+//-----------------------------Test for isPlaceEmpty() function
 {
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
   output = true; 
-  assert.deepEqual(engineLib.placeDisc(board, "O", 3,1),output);
+  assert.deepEqual(coreLib.isPlaceEmpty(board, 3,1),output);
 }
 
 {
   board = [["-","-","-","-"],["-","X","O","-"],["-","O","X","-"],["-","O","-","-"]];      
   output = false; 
-  assert.deepEqual(engineLib.placeDisc(board, "O", 1,1),output);
+  assert.deepEqual(coreLib.isPlaceEmpty(board, 1,1),output);
 }

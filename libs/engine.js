@@ -2,16 +2,16 @@ const coreLib = require("./core.js");
 const generateBoard = coreLib.generateBoard;
 
 const printBoard = function(board){
-  let result = "";
-  let rowSeparator = "";
+  let finalBoard = "";
+  let separator = "";
   for(let row = 0; row < board.length; row++){
-    result += rowSeparator;
+    finalBoard = finalBoard + separator;
     for(let col = 0; col < board[row].length; col++){
-      result += board[row][col] + " ";
+      finalBoard = finalBoard + board[row][col] + " ";
     }
-    rowSeparator = "\n";
+    separator = "\n";
   }
-  return result;
+  return finalBoard;
 }
 
 const initBoard = function(board){

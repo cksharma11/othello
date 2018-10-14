@@ -16,18 +16,10 @@ const printBoard = function(board){
 
 const initBoard = function(board){
   let boardSize = board.length;
-  //Upper Left Position 
-  board[boardSize/2 -1][boardSize/2 -1] = 'X';
-  
-  //Bottom right position
-  board[boardSize/2][boardSize/2] = 'X';
-  
-  //Upper right position
-  board[boardSize/2 -1][boardSize/2] = 'O';
-  
-  //Bottom left position
-  board[boardSize/2][boardSize/2 -1] = 'O';
-
+  let place_1 = boardSize/2 -1;
+  let place_2 = boardSize/2;
+  board[place_1][place_1] = board[place_2][place_2] = 'X';
+  board[place_1][place_2] = board[place_2][place_1] = 'O';
   return board;
 }
 

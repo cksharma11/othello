@@ -30,11 +30,11 @@ assert.deepEqual(engineLib.printBoard(board), output);
 
 //Test for 2x2 board
 board = [["-","-"], ["-", "-"]];
-output = "--\n--";
+output = "- - \n- - ";
 assert.deepEqual(engineLib.printBoard(board), output);
 
 //Test for 4x4 board
 board = [["-","-","-","-"], ["-", "-", "-", "-"]];
-output = "----\n----\n----\n----";
+output = "- - - - \n- - - - \n- - - - \n- - - - ";
 assert.deepEqual(engineLib.printBoard(board), output);
 

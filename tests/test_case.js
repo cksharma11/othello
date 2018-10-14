@@ -25,7 +25,7 @@ assert.deepEqual(engineLib.printBoard(board), output);
 
 //Test for 1x1 board
 board = [["-"]];
-output = "- ";
+output = "-";
 assert.deepEqual(engineLib.printBoard(board), output);
 
 //Test for 2x2 board
